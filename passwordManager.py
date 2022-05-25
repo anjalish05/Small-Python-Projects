@@ -25,7 +25,7 @@ def view():
             data = (line.rstrip()) # strip off the character line 
             user, passw = data.split("|") # this syntax, whenever sees this character splits it in different items
             # returns the string as the list, here, since only two things have been inputted, so only two elements would be split
-            print("User:", user + ",", "| Password:", (passw.encode())).decode()
+            print("User:", user + ",", "| Password:", fer.decrypt(passw.encode()).decode())
 
 
 def add():
@@ -33,7 +33,7 @@ def add():
     pwd = input("Password: ")
 
     with open('passwords.txt', 'a') as f: #w: write, r: read, a: append
-        f.write(name + "|" + str((pwd.encode()).decode()) + "\n")
+        f.write(name + "|" + fer.encrypt(pwd.encode()).decode() + "\n")
 
 while True:
     mode = input("Would you like to add a new password or view existing ones or quit? (view/add/q): ").lower()
