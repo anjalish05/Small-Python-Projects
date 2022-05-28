@@ -277,10 +277,19 @@ from __future__ import barry_as_FLUFL
 # print(daysConversions["Thur"])
 # print(daysConversions.get("Luv", "Not a valid key"))
 
-num = 2**3
-def raise_to_power(base_num, pow_num):
-	result = 1
-	for index in range(pow_num):
-		result = result*base_num
-	return result # base_num**pow_num 
-print(raise_to_power(3, 3))
+# num = 2**3
+# def raise_to_power(base_num, pow_num):
+# 	result = 1
+# 	for index in range(pow_num):
+# 		result = result*base_num
+# 	return result # base_num**pow_num 
+# print(raise_to_power(3, 3))
+
+try:
+	value = 10/0
+	number = int(input("Enter a number: "))
+	print(number)
+except ZeroDivisionError as err:
+	print(err)
+except ValueError:
+	print("Invalid Input")
