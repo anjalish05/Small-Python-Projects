@@ -1,8 +1,15 @@
-num1 = input("Enter a number: ")
-num2 = input("Enter second number: ")
+num1 = float(input("Enter a number: "))
+op = input("Enter operator: ")
+num2 = float(input("Enter second number: "))
 
-add_result = float(num1) + float(num2)
-sub_result = float(num1) - float(num2)
+if op == '+':
+    print(num1 + num2)
+elif op == '-':
+    print(num1 - num2)
+elif op == '/':
+    print(num1/num2)
+elif op == '*':
+    print(num1*num2)
+else:
+    print("Invalid Operator")
 
-print(add_result)
-print(sub_result)
