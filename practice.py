@@ -285,11 +285,12 @@ from __future__ import barry_as_FLUFL
 # 	return result # base_num**pow_num 
 # print(raise_to_power(3, 3))
 
-try:
-	value = 10/0
-	number = int(input("Enter a number: "))
-	print(number)
-except ZeroDivisionError as err:
-	print(err)
-except ValueError:
-	print("Invalid Input")
+# try:
+# 	value = 10/0
+# 	number = int(input("Enter a number: "))
+# 	print(number)
+# except ZeroDivisionError as err:
+# 	print(err)
+# except ValueError:
+# 	print("Invalid Input")
+
