@@ -1,5 +1,7 @@
 import useful_tools
 from Student import Student 
+from chef import Chef
+from ChineseChef import ChineseChef
 
 print(useful_tools.roll_dice(10))
 
@@ -10,6 +12,12 @@ student2 = Student("Dwight", "Business", 3.7, True)
 
 print(student1.name)
 
-print(student1.on_honor_roll())
+# print(student1.on_honor_roll())
 
 # self is the actual object 
+
+myChef = Chef()
+myChef.make_special_dish()
+
+myChineseChef = ChineseChef()
+myChineseChef.make_special_dish()
